@@ -48,14 +48,124 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OpenZWaveDriver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ZWaveDriver.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="config\device_classes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="config\device_configuration.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="config\manufacturer_specific.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="config\options.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="config\zwcfg.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="config\zwscene.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="IlMerge.CSharp.targets" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="lib\OpenZWaveDotNet.dll" />
+    <Content Include="config\2gig\ct100.xml" />
+    <Content Include="config\2gig\ct30.xml" />
+    <Content Include="config\act\lfm20.xml" />
+    <Content Include="config\act\zdm230.xml" />
+    <Content Include="config\act\zdw103.xml" />
+    <Content Include="config\act\zdw232.xml" />
+    <Content Include="config\act\zir010.xml" />
+    <Content Include="config\act\zrp110.xml" />
+    <Content Include="config\act\zrw103.xml" />
+    <Content Include="config\aeon_labs\alms.xml" />
+    <Content Include="config\aeon_labs\doorwindow.xml" />
+    <Content Include="config\aeon_labs\hem.xml" />
+    <Content Include="config\aeon_labs\hemg2.xml" />
+    <Content Include="config\aeon_labs\keyfob.xml" />
+    <Content Include="config\aeon_labs\minimote.xml" />
+    <Content Include="config\aeon_labs\recessed_doorsensor.xml" />
+    <Content Include="config\aeon_labs\ses.xml" />
+    <Content Include="config\BeNext\1poleswitch.xml" />
+    <Content Include="config\BeNext\2poleswitch.xml" />
+    <Content Include="config\BeNext\AlarmSound.xml" />
+    <Content Include="config\BeNext\BuiltinDimmer.xml" />
+    <Content Include="config\BeNext\DoorSensor.xml" />
+    <Content Include="config\BeNext\EnergySwitch.xml" />
+    <Content Include="config\BeNext\Molite.xml" />
+    <Content Include="config\BeNext\PluginDimmer.xml" />
+    <Content Include="config\BeNext\TagReader.xml" />
+    <Content Include="config\danfoss\living.xml" />
+    <Content Include="config\danfoss\z.xml" />
+    <Content Include="config\device_classes.xml" />
+    <Content Include="config\duwi\ZWES1000.xml" />
+    <Content Include="config\eurotronic\eur_stellaz.xml" />
+    <Content Include="config\everspringct\hsm02.xml" />
+    <Content Include="config\everspring\an145.xml" />
+    <Content Include="config\everspring\an158.xml" />
+    <Content Include="config\everspring\se812.xml" />
+    <Content Include="config\everspring\sf812.xml" />
+    <Content Include="config\everspring\sm103.xml" />
+    <Content Include="config\everspring\sp103.xml" />
+    <Content Include="config\everspring\sp814.xml" />
+    <Content Include="config\everspring\st814.xml" />
+    <Content Include="config\everspring\st815.xml" />
+    <Content Include="config\everspring\tse03.xml" />
+    <Content Include="config\fibaro\fgbs001.xml" />
+    <Content Include="config\fibaro\fgd211.xml" />
+    <Content Include="config\fibaro\fgfs101.xml" />
+    <Content Include="config\fibaro\fgk001.xml" />
+    <Content Include="config\fibaro\fgms.xml" />
+    <Content Include="config\fibaro\fgr221.xml" />
+    <Content Include="config\fibaro\fgrgbwm441.xml" />
+    <Content Include="config\fibaro\fgrm222.xml" />
+    <Content Include="config\fibaro\fgs211.xml" />
+    <Content Include="config\fibaro\fgs221.xml" />
+    <Content Include="config\fibaro\fgss101.xml" />
+    <Content Include="config\fibaro\fgwpe.xml" />
+    <Content Include="config\frostdale\fdn2nxx.xml" />
+    <Content Include="config\ge\dimmer.xml" />
+    <Content Include="config\ge\dimmer_module.xml" />
+    <Content Include="config\ge\relay.xml" />
+    <Content Include="config\greenwave\powernode1.xml" />
+    <Content Include="config\greenwave\powernode6.xml" />
+    <Content Include="config\homeseer\hsm100.xml" />
+    <Content Include="config\homeseer\ztroller.xml" />
+    <Content Include="config\honeywell\th8320zw1000.xml" />
+    <Content Include="config\horstmann\hrt4zw.xml" />
+    <Content Include="config\intermatic\ca8900.xml" />
+    <Content Include="config\leviton\rzi10.xml" />
+    <Content Include="config\leviton\vrcpg.xml" />
+    <Content Include="config\leviton\vrf01.xml" />
+    <Content Include="config\leviton\vri06.xml" />
+    <Content Include="config\leviton\vri10.xml" />
+    <Content Include="config\manufacturer_specific.xml" />
+    <Content Include="config\northq\nq92021.xml" />
+    <Content Include="config\options.xml" />
+    <Content Include="config\philio\psm02.xml" />
+    <Content Include="config\rcs\em52-zw.xml" />
+    <Content Include="config\rcs\pm12-zw.xml" />
+    <Content Include="config\rcs\therm0005.xml" />
+    <Content Include="config\rcs\therm0007.xml" />
+    <Content Include="config\rcs\therm0009.xml" />
+    <Content Include="config\remotec\zurc.xml" />
+    <Content Include="config\remotec\zxt-120.xml" />
+    <Content Include="config\schlagelink\itemp.xml" />
+    <Content Include="config\trane\TZEMT400AB32MAA.xml" />
+    <Content Include="config\trane\TZEMT400BB32MAA.xml" />
+    <Content Include="config\vision\zs5101eu.xml" />
+    <Content Include="config\vitrum\vitrumBS.xml" />
+    <Content Include="config\waynedalton\WDTC-20.xml" />
+    <Content Include="config\wenzhou\tz66d.xml" />
+    <Content Include="config\wenzhou\tz88.xml" />
+    <Content Include="config\zwave.me\kfob.xml" />
+    <Content Include="config\zwave.me\ZME_06433.xml" />
+    <Content Include="config\zwave.me\ZME_06436.xml" />
+    <Content Include="config\zwave.me\ZME_WCD2.xml" />
   </ItemGroup>
   <Import Project="IlMerge.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -14,8 +14,12 @@ The following drivers in this repository are stable:
 
 	RainforestEagleDriver - The Rainforest Eagle bridge provides updates on household power usage.
 
+	Pushover - A client for the Pushover.net service to push notifications to phones and other devices.
+
 The following drivers in this repository are still in active development:
 
 	NestDriver - Uses the Nest API to control your thermostat (in development).
 
 	PhilipsHueDriver - Uses the REST API for the Philips Hue Bridge to control lighting (in development).
+
+	ZWave - A ZWave driver for the Z-Stick

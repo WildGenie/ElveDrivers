@@ -21,6 +21,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RainforestEagleDriver", "So
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestDriver.Tests", "Tests\NestDriver.Tests\NestDriver.Tests.csproj", "{C88AB1D1-18B7-4E57-868C-32FD3D47F2F4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3F0AC769-9F0F-46B6-B9AF-1A5B6001194A}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZWaveDriver", "Source\ZWaveDriver\ZWaveDriver.csproj", "{A7814601-90BF-4278-996D-B6FFD66E5147}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +110,16 @@ Global
 		{C88AB1D1-18B7-4E57-868C-32FD3D47F2F4}.Release|ARM.ActiveCfg = Release|Any CPU
 		{C88AB1D1-18B7-4E57-868C-32FD3D47F2F4}.Release|x64.ActiveCfg = Release|Any CPU
 		{C88AB1D1-18B7-4E57-868C-32FD3D47F2F4}.Release|x86.ActiveCfg = Release|Any CPU
+		{A7814601-90BF-4278-996D-B6FFD66E5147}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7814601-90BF-4278-996D-B6FFD66E5147}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7814601-90BF-4278-996D-B6FFD66E5147}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{A7814601-90BF-4278-996D-B6FFD66E5147}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A7814601-90BF-4278-996D-B6FFD66E5147}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A7814601-90BF-4278-996D-B6FFD66E5147}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7814601-90BF-4278-996D-B6FFD66E5147}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7814601-90BF-4278-996D-B6FFD66E5147}.Release|ARM.ActiveCfg = Release|Any CPU
+		{A7814601-90BF-4278-996D-B6FFD66E5147}.Release|x64.ActiveCfg = Release|Any CPU
+		{A7814601-90BF-4278-996D-B6FFD66E5147}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -115,5 +132,6 @@ Global
 		{B410AAAB-82F1-424C-8FA3-B6AFCE608CFC} = {B3655C70-4950-4E64-AF8D-EC87BBC5FC6B}
 		{75BAF947-1097-4A09-AF95-B7E777FE41D1} = {B3655C70-4950-4E64-AF8D-EC87BBC5FC6B}
 		{C88AB1D1-18B7-4E57-868C-32FD3D47F2F4} = {AB6386E8-4D07-458A-BFBF-5C02A6136E1C}
+		{A7814601-90BF-4278-996D-B6FFD66E5147} = {B3655C70-4950-4E64-AF8D-EC87BBC5FC6B}
 	EndGlobalSection
 EndGlobal
