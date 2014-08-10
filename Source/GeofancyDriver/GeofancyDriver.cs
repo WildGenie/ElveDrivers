@@ -41,9 +41,9 @@ namespace Elve.Driver.Geofancy
         #region Public Fields
 
         [DriverEvent("Location Changed", "Occurs when the location changes (entry or exit).")]
-        [DriverEventParameter("Location Id", "Specifies the device location id the rule applies to.", true)] 
-        [DriverEventParameter("Device", "Specifies the device the rule applies to.", false)] 
-        [DriverEventParameter("Trigger", "Specifies the device trigger the rule applies to.", new[] {"enter", "exit"}, false)] 
+        [DriverEventParameter("Location", "Specifies the device location id the rule applies to.", true)] 
+        [DriverEventParameter("Trigger", "Specifies the device trigger the rule applies to.", new[] {"enter", "exit", "test"}, true)]
+        [DriverEventParameter("Device", "Specifies the device the rule applies to.", false)]
         public DriverEvent LocationChanged;
 
         #endregion Public Fields
@@ -356,7 +356,12 @@ namespace Elve.Driver.Geofancy
             DevicePropertyChangeNotification("Timestamp", _timestamp);
 
             // Raise the changed event
-            RaiseDeviceEvent(LocationChanged);
+            RaiseDeviceEvent(LocationChanged, new DriverEventParameterDictionary
+            {
+                {"Location", _locationId, true},
+                {"Trigger", _trigger, true},
+                {"Device", _device, true}
+            });
 
             IsReady = true;
         }
