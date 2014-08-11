@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Open Z-Wave")]
-[assembly: AssemblyDescription("Open Z-Wave Driver")]
+[assembly: AssemblyTitle("Benq Projector Driver")]
+[assembly: AssemblyDescription("Benq Projector Driver")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Elve")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("8ab2cb1b-81bf-46aa-b143-c663f66f0f1b")]
+[assembly: Guid("039ef620-f2f1-4cd1-8fb7-9d5af78ba465")]
 
 // Version information for an assembly consists of the following four values:
 //
