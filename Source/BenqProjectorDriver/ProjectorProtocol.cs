@@ -167,13 +167,13 @@ namespace Elve.Driver.BenqProjector
 
         private void OnCommandWatchdogTimeout(object sender, ElapsedEventArgs e)
         {
-            _logger.Warning("Timeout waiting for command response from projector. Resetting queues.");
+            _logger.Warning("ProjectorProtocol Timeout waiting for command response from projector. Resetting queues.");
             _commandQueue.Clear();
         }
 
         protected virtual void ProcessProjectorResponse(string rawResponse)
         {
-            _logger.DebugFormat("Processing response: {0}", rawResponse);
+            _logger.DebugFormat("ProjectorProtocol Processing response: {0}", rawResponse);
 
             if (rawResponse == Unavailable) return;
 
@@ -222,7 +222,7 @@ namespace Elve.Driver.BenqProjector
         private void ProjectorReceivedEvent(object sender, ReceivedDelimitedStringEventArgs e)
         {
             if (e.RawResponse.Length == 0) return;
-            _logger.DebugFormat("RX: {0}", e.RawResponse);
+            _logger.DebugFormat("ProjectorProtocol RX: {0}", e.RawResponse);
 
             try
             {
@@ -244,13 +244,13 @@ namespace Elve.Driver.BenqProjector
             }
             catch (Exception ex)
             {
-                _logger.ErrorFormat("An error ocurred in the driver received response event.  Error: {0}", ex);
+                _logger.ErrorFormat("An error ocurred in the ProjectorProtocol received response event.  Error: {0}", ex);
             }
         }
 
         private void SendCommand(string cmd)
         {
-            _logger.DebugFormat("TX: {0}", cmd);
+            _logger.DebugFormat("ProjectorProtocol TX: {0}", cmd);
             _communication.Send("\r" + cmd + "\r");
             _watchdogTimer.Start();
         }
